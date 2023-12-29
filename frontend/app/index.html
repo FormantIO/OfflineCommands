@@ -1,0 +1,54 @@
+<!-- <script>
+  window.FORMANT_API_URL = "https://api-dev.formant.io";
+</script> -->
+<!DOCTYPE html>
+<html lang="en" style="background: #3b4668">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formant Teleop Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/formantio/toolkit/css/formant.css" />
+</head>
+
+<body>
+  <section>
+    <div class="center">
+      <h1>Local Commander</h1>
+    </div>
+    <br />
+    <div id="connect_div">
+      <div class="center">
+        <div class="center">
+          <h3>Device IP:</h3><input small=true id="device_ip" type="text" />
+        </div>
+        <br />
+        <div class="center">
+          <button large=true primary=true id="connect">Connect</button>
+        </div>
+      </div>
+    </div>
+    <div hidden=true id="command_body">
+      <div class="center">
+        <h3>Command Name:</h3>
+        <select id="commands">
+          <option>not connected...</option>
+        </select><br /><br />
+        <h3>Command Payload:</h3> <input id="command_payload" type="text" />
+      </div>
+      <div class="center">
+        <br />
+        <button primary=true large=true id="send_command">Send Command</button>
+      </div>
+    </div>
+    <div class="bottom_left">
+      <input value="reset" type=button small=true id="reset" />
+    </div>
+  </section>
+  <br />
+  <div id="log"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

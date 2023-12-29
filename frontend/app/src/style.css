@@ -1,0 +1,29 @@
+P { text-align: center }
+h1, h2, h3, h4, h5, h6 {
+    display: inline;
+    margin: 10px
+}
+.center { text-align: center }
+.center_inner { text-align: center }
+.bottom_left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding:3px;
+
+}
+section{
+    position:relative;
+}
+select{
+height: 40px;
+min-width: 200px;
+width: auto;
+border-top-right-radius: 6px;
+border-top-left-radius: 6px;
+border: none;
+border-bottom: #bac4e2 .5px dotted;    
+background-color: #3b4668;
+padding: 0 15px;
+color: white;
+}
